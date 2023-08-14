@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include <Windows.h>
+
+using std::cout;
 
 int main()
 {
-    std::cout << "Suck my ass, Kyle!\n";
+    cout << "Suck my ass, Kyle!\n";
+    Sleep(2000);
+    cout << "No, fuck you, Cartman!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
