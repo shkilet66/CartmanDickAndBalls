@@ -8,9 +8,12 @@ using std::cout;
 
 int main()
 {
+    system("Color 01");
     cout << "Suck my ass, Kyle!\n";
     Sleep(2000);
+    system("Color 02");
     cout << "No, fuck you, Cartman!\n";
+    Sleep(2000);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
