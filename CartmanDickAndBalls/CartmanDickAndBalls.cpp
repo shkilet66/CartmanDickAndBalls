@@ -1,16 +1,21 @@
 // CartmanDickAndBalls.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include <iostream> // connecting a default input-output library
 #include <Windows.h>
-#include <string>
+#include <string> 
+/**
+* using connects the name spaces 
+*/
 
-using std::cout;
-using std::endl;
-using std::string;
+//using std::cout; 
+//using std::endl;
+//using std::string;
+using namespace std;
 
 int main()
 {
+    // strings array
     string strings[] = {"Suck my ass, Kyle!", "No, fuck you, Cartman!"};
 
     // handle to console
@@ -22,8 +27,12 @@ int main()
     {
         SetConsoleTextAttribute(hConsole, k++);
         cout << str << endl;
+     
     }
-}
+    SetConsoleTextAttribute(hConsole, 15);
+    return 0;
+} 
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
