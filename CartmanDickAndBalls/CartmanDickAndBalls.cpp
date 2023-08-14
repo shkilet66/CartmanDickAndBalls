@@ -3,17 +3,26 @@
 
 #include <iostream>
 #include <Windows.h>
+#include <string>
 
 using std::cout;
+using std::endl;
+using std::string;
 
 int main()
 {
-    system("Color 01");
-    cout << "Suck my ass, Kyle!\n";
-    Sleep(2000);
-    system("Color 02");
-    cout << "No, fuck you, Cartman!\n";
-    Sleep(2000);
+    string strings[] = {"Suck my ass, Kyle!", "No, fuck you, Cartman!"};
+
+    // handle to console
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    // you can loop k higher to see more color choices
+
+    int k = 1;
+    for (string str : strings)
+    {
+        SetConsoleTextAttribute(hConsole, k++);
+        cout << str << endl;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
